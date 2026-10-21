@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dart-agent"
+version = "1.0.0"
+description = "Lightweight AI agent for your terminal — connect to any OpenAI-compatible API"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+    "rich-click>=1.0.0",
+    "pyinstaller>=6.22.3",
+    "prompt-toolkit>=3.0.53",
+]
+
+[project.scripts]
+dart-agent = "dart_agent.cli:main"
+drt = "dart_agent.cli:main"
